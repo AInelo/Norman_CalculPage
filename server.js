@@ -12,9 +12,12 @@ app.use(express.static(initial_path));
 // app.use(fileupload());
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(initial_path, "index2.html"));
+    res.sendFile(path.join(initial_path, "index.html"));
 })
 
+app.get('/essai', (req, res) => {
+  res.sendFile(path.join(initial_path, "essai.html"));
+})
 
 const port = 3004;
 const ipAddress = "192.168.1.106";
