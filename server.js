@@ -19,6 +19,10 @@ app.get('/essai', (req, res) => {
   res.sendFile(path.join(initial_path, "essai.html"));
 })
 
+app.get('/essai2', (req, res) => {
+  res.sendFile(path.join(initial_path, "essai2.html"));
+})
+
 const port = 3004;
 const ipAddress = "192.168.1.106";
 
