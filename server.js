@@ -19,6 +19,14 @@ app.get('/essai', (req, res) => {
   res.sendFile(path.join(initial_path, "essai.html"));
 })
 
+app.post('/php/admin-ajax.php', (req, res) => {
+  res.sendFile(path.join(initial_path, "./php/admin-ajax.php"));
+})
+
+app.get('/php/admin-ajax.php', (req, res) => {
+  res.sendFile(path.join(initial_path, "./php/admin-ajax.php"));
+})
+
 
 const port = 3004;
 const ipAddress = "192.168.1.106";
