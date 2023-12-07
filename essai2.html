@@ -3,144 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- <link rel="pingback" href="/xmlrpc.php"> -->
-
  <!-- <link rel="manifest" href="./json/favicon_manifeste.json"> -->
-
-
     <!-- <link rel="stylesheet" href="rocket-lazyload-inline-css.css"> -->
-
-
-
-
     <title>Calcul volume (m3) de déménagement</title>
-
-
-
-  
-
     <link data-minify="1" rel='stylesheet' id='theme-css' href='./css/theme/bootstrap/theme1700044861.css'
         media='all' />
-    <!-- <link rel='stylesheet' id='lib_owl-css' class="./css/" href='./css/theme/bootstrap/owl.carousel.min.css'
-        media='all' /> -->
-    <!-- <link rel='stylesheet' id='lib_datepicker-css' href='./css/theme/bootstrap/bootstrap-datepicker3.min.css'
-        media='all' /> -->
-    <!-- <link data-minify="1" rel='stylesheet' id='tablepress-default-css'
-        href='./css/theme/bootstrap/default1700044876.css' media='all' /> -->
-
-
-    <!-- <link rel='stylesheet' id='dashicons-css' href='./css/theme/bootstrap/empty-file6.3.1.css' media='all' /> -->
-    <!-- <link data-minify="1" rel='stylesheet' id='acf-global-css' href='./css/theme/bootstrap/acf-global1700044861.css'
-        media='all' /> -->
     <link data-minify="1" rel='stylesheet' id='acf-input-css' href='./css/theme/bootstrap/acf-input1700044861.css'
         media='all' />
-    <!-- <link data-minify="1" rel='stylesheet' id='acf-pro-input-css'
-        href='./css/theme/bootstrap/acf-pro-input1700044861.css' media='all' /> -->
-
-    <!-- <link rel='stylesheet' id='select2-css' href='./css/theme/bootstrap/select24.0.13.min.css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='acf-datepicker-css' href='./css/theme/bootstrap/jquery-ui1.11.4.min.css' media='all' /> -->
-    <!-- <link rel='stylesheet' id='acf-timepicker-css' href='./css/theme/bootstrap/jquery-ui-timepicker-addon1.6.1.min.css'
-        media='all' /> -->
-    <!-- <link rel='stylesheet' id='acf-extended-input-css' href='./css/theme/bootstrap/acfe-input0.8.9.4.min.css'
-        media='all' /> -->
-    <!-- <link rel='stylesheet' id='acf-extended-css' href='./css/theme/bootstrap/acfe0.8.9.4.min.css' media='all' /> -->
-
-    <!-- <style id='rocket-lazyload-inline-css'>
-
-    </style> -->
-
     <!-- un js qui permet d'afficher les éléments  -->
     <script src='./js/jquery.min.js' id='jquery-core-js'></script>
     <!-- un js qui permet d'afficher les éléments  -->
-
-    <!-- <script src='./js/jquery-migrate.min.js' id='jquery-migrate-js' defer></script> -->
     <script src='./js/core.min.js' id='jquery-ui-core-js' defer></script>
     <script src='./js/mouse.min.js' id='jquery-ui-mouse-js' defer></script>
-    <!-- <script src='./js/sortable.min.js' id='jquery-ui-sortable-js' defer></script>
-    <script src='./js/resizable.min.js' id='jquery-ui-resizable-js' defer></script> -->
-    <!-- <script id='acf-js-extra'>
-        var acfL10n = { "Are you sure?": "Confirmez-vous\u00a0?", "Yes": "Oui", "No": "Non", "Remove": "Retirer", "Cancel": "Annuler", "The changes you made will be lost if you navigate away from this page": "Les modifications que vous avez effectu\u00e9es seront perdues si vous quittez cette page", "Validation successful": "Validation r\u00e9ussie", "Validation failed": "\u00c9chec de la validation", "1 field requires attention": "Un champ n\u00e9cessite votre attention", "%d fields require attention": "%d champs n\u00e9cessitent votre attention", "Edit field group": "Modifier le groupe de champs", "Select Image": "S\u00e9lectionner une image", "Edit Image": "Modifier l\u2019image", "Update Image": "Mettre \u00e0 jour l\u2019image", "All images": "Toutes les images", "Select File": "S\u00e9lectionner un fichier", "Edit File": "Modifier le fichier", "Update File": "Mettre \u00e0 jour le fichier", "Maximum values reached ( {max} values )": "Valeurs maximum atteintes ({max} valeurs)", "Loading": "Chargement", "No matches found": "Aucune correspondance trouv\u00e9e", "Sorry, this browser does not support geolocation": "D\u00e9sol\u00e9, ce navigateur ne prend pas en charge la g\u00e9olocalisation", "Minimum rows not reached ({min} rows)": "Nombre minimal d\u2019\u00e9l\u00e9ments insuffisant ({min} \u00e9l\u00e9ments)", "Maximum rows reached ({max} rows)": "Nombre maximal d\u2019\u00e9l\u00e9ments atteint ({max} \u00e9l\u00e9ments)", "Error loading page": "Erreur de chargement de la page", "Order will be assigned upon save": "L\u2019ordre sera assign\u00e9 apr\u00e8s l\u2019enregistrement", "layout": "disposition", "layouts": "dispositions", "Fields": "Champs", "This field requires at least {min} {label} {identifier}": "Ce champ requiert au moins {min} {label} {identifier}", "This field has a limit of {max} {label} {identifier}": "Ce champ a une limite de {max} {label} {identifier}", "{available} {label} {identifier} available (max {max})": "{available} {label} {identifier} disponible (max {max})", "Flexible Content requires at least 1 layout": "Le contenu flexible n\u00e9cessite au moins une disposition", "Add Image to Gallery": "Ajouter l\u2019image \u00e0 la galerie", "Maximum selection reached": "Nombre de s\u00e9lections maximales atteint", "Layout data has been copied to your clipboard.": "Les donn\u00e9es de la section ont \u00e9t\u00e9 copi\u00e9es dans votre presse-papiers.", "Layouts data have been copied to your clipboard.": "Les donn\u00e9es des sections ont \u00e9t\u00e9 copi\u00e9es dans votre presse-papiers.", "Please copy the following layout(s) data to your clipboard.": "Veuillez copier les donn\u00e9es des sections suivantes dans votre presse-papiers.", "Please paste previously copied layout data in the following field:": "Veuillez coller les donn\u00e9es de section pr\u00e9c\u00e9demment copi\u00e9es dans le champ suivant:", "You can now paste it in the same Flexible Content on another page, using the \"Paste\" button action.": "Vous pouvez maintenant les coller dans le m\u00eame Contenu Flexible sur une autre page, en utilisant le bouton d'action \"Coller\".", "Select.verb": "S\u00e9lectionner", "Edit.verb": "Modifier", "Update.verb": "Mettre \u00e0 jour", "Uploaded to this post": "T\u00e9l\u00e9vers\u00e9 sur cette publication", "Expand Details": "D\u00e9plier les d\u00e9tails", "Collapse Details": "Replier les d\u00e9tails", "Restricted": "Limit\u00e9", "Close": "Fermer", "Update": "Mettre \u00e0 jour", "Read more": "Lire la suite", "Debug": "D\u00e9bogage" };
-    </script> -->
     <script src='./js/acf.min.js' id='acf-js'></script>
     <script src='./js/acf-input.min.js' id='acf-input-js'></script>
     <script src='./js/acf-pro-input.min.js' id='acf-pro-input-js'></script>
-    <!-- <script src='./js/acf-pro-ui-options-page.min.js' id='acf-pro-ui-options-page-js'></script>
-    <script src='./js/select2.full.min.js' id='select2-js' defer></script> -->
     <script src='./js/datepicker.min.js' id='jquery-ui-datepicker-js' defer></script>
-
-    <!-- <script id="jquery-ui-datepicker-js-after">
-        jQuery(function (jQuery) { jQuery.datepicker.setDefaults({ "closeText": "Fermer", "currentText": "Aujourd\u2019hui", "monthNames": ["janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], "monthNamesShort": ["Jan", "F\u00e9v", "Mar", "Avr", "Mai", "Juin", "Juil", "Ao\u00fbt", "Sep", "Oct", "Nov", "D\u00e9c"], "nextText": "Suivant", "prevText": "Pr\u00e9c\u00e9dent", "dayNames": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"], "dayNamesShort": ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"], "dayNamesMin": ["D", "L", "M", "M", "J", "V", "S"], "dateFormat": "d MM yy", "firstDay": 1, "isRTL": false }); });
-    </script> -->
-
-    <!-- <script src='./js/jquery-ui-timepicker-addon.min.js' id='acf-timepicker-js' defer></script>
-    <script src='./js/draggable.min.js' id='jquery-ui-draggable-js' defer></script>
-    <script src='./js/slider.min.js' id='jquery-ui-slider-js' defer></script>
-    <script data-minify="1" src='./js/jquery.ui.touch-punch.js' id='jquery-touch-punch-js'></script> -->
     <script src='./js/iris.min.js' id='iris-js' defer></script>
-    <!-- <script src='./js/wp-polyfill-inert.min.js' id='wp-polyfill-inert-js' defer></script>
-    <script src='./js/regenerator-runtime.min.js' id='regenerator-runtime-js' defer></script>
-    <script src='./js/wp-polyfill.min.js' id='wp-polyfill-js'></script> -->
-
     <script src='./js/hooks.min.js' id='wp-hooks-js'></script>
     <script src='./js/i18n.min.js' id='wp-i18n-js'></script>
-
-    <!-- <script id="wp-i18n-js-after">
-        wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
-    </script> -->
-
-
-
     <script src='./js/color-picker.min.js' id='wp-color-picker-js' defer></script>
-    <!-- <script data-minify="1" src='./js/wp-color-picker-alpha.js' id='acf-color-picker-alpha-js' defer></script>
-    <script src='./js/acfe.min.js' id='acf-extended-js'></script>
-    <script src='./js/acfe-input.min.js' id='acf-extended-input-js'></script>
+    <!--
     <link rel="https://api.w.org/" href="./json/wp-json.json" />
     <link rel="alternate" type="application/json" href="./json/2763242.json" />
     <link rel="alternate" type="application/json+oembed" href="./json/calcul-du-volume.json" />
     <link rel="alternate" type="text/xml+oembed" href="./json/calcule_volume_XML.json" /> -->
-    <!-- <style type="text/css">
-        ol.footnotes>li {
-            list-style-type: decimal;
-        }
-
-        ol.footnotes {
-            color: #666666;
-        }
-
-        ol.footnotes li {
-            font-size: 80%;
-        }
-    </style> -->
-    <!-- <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
-
-    </script> -->
-
-    <!-- <noscript>
-        <style id="rocket-lazyload-nojs-css">
-            .rll-youtube-player,
-            [data-lazy-src] {
-                display: none !important;
-            }
-        </style>
-    </noscript> -->
 </head>
 
 <body
     class="page-template page-template-templates page-template-fullwidth page-template-templatesfullwidth-php page page-id-2763242 page-parent wp-embed-responsive nothome">
 
-
-
-    <!-- DEBUT DE LA PAGE  -->
-
-    <!-- .site-header -->
-
-
-
-    <!-- .site-header -->
+    <!-- DEBUT DU CALULATEUR  -->
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
@@ -3485,32 +3380,18 @@
         </main><!-- .site-main -->
     </div><!-- .content-area -->
 
-
-    <!-- .site -->
+    <!-- FIN DU CALCULATEUR -->
 
     <link data-minify="1" rel='stylesheet' id='acfvc-styles-css' href='./css/acfvc-styles.css' media='all' />
-    <!-- <script src='./js/popper.min.js' id='cdn-popper-js' defer></script> -->
+
     <script src='./js/bootstrap.min.js' id='bootstrap-js' defer></script>
     <script id='script-js-extra'>
         var ajaxurl = "https:\/\/www.demenageur.com\/wp-admin\/admin-ajax.php";
     </script>
     <script data-minify="1" src='./js/script.js' id='script-js' defer></script>
-    <!-- <script src='./js/owl.carousel.min.js' id='lib_owl-js' defer></script>
-    <script src='./js/theia-sticky-sidebar.min.js' id='lib_theiasticky-js' defer></script>
-    <script src='./js/script_single.js' id='script_single-js' defer></script> -->
-    <!-- <script src='//maps.googleapis.com/maps/api/js?key=AIzaSyC4OVLBsCgQv_ce-h1R4ADYXMk7aDxuDKs&#038;libraries=places'
-        id='lib_googlemap-js' defer></script> -->
-    <!-- <script data-minify="1" src='./js/map.js' id='theme_map-js' defer></script> -->
-    <!-- <script data-minify="1" src='./js/ajax_calc.js' id='theme_ajax_calc-js' defer></script> -->
+
     <script data-minify="1" src='./js/acfvc-global.js' id='acfvc-global-js'></script>
     <script data-minify="1" src='./js/acfvc-ajax.js' id='acfvc-ajax-js'></script>
-    <!-- <script>
-        acf.data = { "select2L10n": { "matches_1": "Un r\u00e9sultat est disponible, appuyez sur \u00ab\u00a0Entr\u00e9e\u00a0\u00bb pour le s\u00e9lectionner.", "matches_n": "%d r\u00e9sultats disponibles, utilisez les fl\u00e8ches haut et bas pour naviguer parmi ceux-ci.", "matches_0": "Aucun r\u00e9sultat", "input_too_short_1": "Veuillez saisir au minimum 1 caract\u00e8re", "input_too_short_n": "Veuillez saisir %d caract\u00e8res ou plus", "input_too_long_1": "Veuillez supprimer 1 caract\u00e8re", "input_too_long_n": "Veuillez supprimer %d caract\u00e8res", "selection_too_long_1": "Vous ne pouvez choisir qu\u2019un seul \u00e9l\u00e9ment", "selection_too_long_n": "Vous ne pouvez choisir que %d \u00e9l\u00e9ments", "load_more": "Chargement de r\u00e9sultats suppl\u00e9mentaires\u2026", "searching": "Recherche en cours...", "load_fail": "Le chargement a \u00e9chou\u00e9" }, "google_map_api": "https:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places&ver=3&callback=Function.prototype&language=fr_FR", "datePickerL10n": { "closeText": "Termin\u00e9", "currentText": "Aujourd\u2019hui", "nextText": "Suivant", "prevText": "Pr\u00e9c.", "weekHeader": "Sem.", "monthNames": ["janvier", "f\u00e9vrier", "mars", "avril", "mai", "juin", "juillet", "ao\u00fbt", "septembre", "octobre", "novembre", "d\u00e9cembre"], "monthNamesShort": ["Jan", "F\u00e9v", "Mar", "Avr", "Mai", "Juin", "Juil", "Ao\u00fbt", "Sep", "Oct", "Nov", "D\u00e9c"], "dayNames": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"], "dayNamesMin": ["D", "L", "M", "M", "J", "V", "S"], "dayNamesShort": ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"] }, "dateTimePickerL10n": { "timeOnlyTitle": "Choisir l\u2019heure", "timeText": "Heure", "hourText": "Heure", "minuteText": "Minute", "secondText": "Seconde", "millisecText": "Milliseconde", "microsecText": "Microseconde", "timezoneText": "Fuseau horaire", "currentText": "Maintenant", "closeText": "Termin\u00e9", "selectText": "S\u00e9lectionner", "amNames": ["AM", "A"], "pmNames": ["PM", "P"] }, "colorPickerL10n": { "hex_string": "Chaine hexad\u00e9cimale", "rgba_string": "Chaine RGBA" }, "mimeTypeIcon": "https:\/\/www.demenageur.com\/wp-includes\/images\/media\/default.png", "mimeTypes": { "jpg|jpeg|jpe": "image\/jpeg", "gif": "image\/gif", "png": "image\/png", "bmp": "image\/bmp", "tiff|tif": "image\/tiff", "webp": "image\/webp", "ico": "image\/x-icon", "heic": "image\/heic", "asf|asx": "video\/x-ms-asf", "wmv": "video\/x-ms-wmv", "wmx": "video\/x-ms-wmx", "wm": "video\/x-ms-wm", "avi": "video\/avi", "divx": "video\/divx", "flv": "video\/x-flv", "mov|qt": "video\/quicktime", "mpeg|mpg|mpe": "video\/mpeg", "mp4|m4v": "video\/mp4", "ogv": "video\/ogg", "webm": "video\/webm", "mkv": "video\/x-matroska", "3gp|3gpp": "video\/3gpp", "3g2|3gp2": "video\/3gpp2", "txt|asc|c|cc|h|srt": "text\/plain", "csv": "text\/csv", "tsv": "text\/tab-separated-values", "ics": "text\/calendar", "rtx": "text\/richtext", "css": "text\/css", "vtt": "text\/vtt", "dfxp": "application\/ttaf+xml", "mp3|m4a|m4b": "audio\/mpeg", "aac": "audio\/aac", "ra|ram": "audio\/x-realaudio", "wav": "audio\/wav", "ogg|oga": "audio\/ogg", "flac": "audio\/flac", "mid|midi": "audio\/midi", "wma": "audio\/x-ms-wma", "wax": "audio\/x-ms-wax", "mka": "audio\/x-matroska", "rtf": "application\/rtf", "pdf": "application\/pdf", "class": "application\/java", "tar": "application\/x-tar", "zip": "application\/zip", "gz|gzip": "application\/x-gzip", "rar": "application\/rar", "7z": "application\/x-7z-compressed", "psd": "application\/octet-stream", "xcf": "application\/octet-stream", "doc": "application\/msword", "pot|pps|ppt": "application\/vnd.ms-powerpoint", "wri": "application\/vnd.ms-write", "xla|xls|xlt|xlw": "application\/vnd.ms-excel", "mdb": "application\/vnd.ms-access", "mpp": "application\/vnd.ms-project", "docx": "application\/vnd.openxmlformats-officedocument.wordprocessingml.document", "docm": "application\/vnd.ms-word.document.macroEnabled.12", "dotx": "application\/vnd.openxmlformats-officedocument.wordprocessingml.template", "dotm": "application\/vnd.ms-word.template.macroEnabled.12", "xlsx": "application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "xlsm": "application\/vnd.ms-excel.sheet.macroEnabled.12", "xlsb": "application\/vnd.ms-excel.sheet.binary.macroEnabled.12", "xltx": "application\/vnd.openxmlformats-officedocument.spreadsheetml.template", "xltm": "application\/vnd.ms-excel.template.macroEnabled.12", "xlam": "application\/vnd.ms-excel.addin.macroEnabled.12", "pptx": "application\/vnd.openxmlformats-officedocument.presentationml.presentation", "pptm": "application\/vnd.ms-powerpoint.presentation.macroEnabled.12", "ppsx": "application\/vnd.openxmlformats-officedocument.presentationml.slideshow", "ppsm": "application\/vnd.ms-powerpoint.slideshow.macroEnabled.12", "potx": "application\/vnd.openxmlformats-officedocument.presentationml.template", "potm": "application\/vnd.ms-powerpoint.template.macroEnabled.12", "ppam": "application\/vnd.ms-powerpoint.addin.macroEnabled.12", "sldx": "application\/vnd.openxmlformats-officedocument.presentationml.slide", "sldm": "application\/vnd.ms-powerpoint.slide.macroEnabled.12", "onetoc|onetoc2|onetmp|onepkg": "application\/onenote", "oxps": "application\/oxps", "xps": "application\/vnd.ms-xpsdocument", "odt": "application\/vnd.oasis.opendocument.text", "odp": "application\/vnd.oasis.opendocument.presentation", "ods": "application\/vnd.oasis.opendocument.spreadsheet", "odg": "application\/vnd.oasis.opendocument.graphics", "odc": "application\/vnd.oasis.opendocument.chart", "odb": "application\/vnd.oasis.opendocument.database", "odf": "application\/vnd.oasis.opendocument.formula", "wp|wpd": "application\/wordperfect", "key": "application\/vnd.apple.keynote", "numbers": "application\/vnd.apple.numbers", "pages": "application\/vnd.apple.pages" }, "acfe": { "version": "0.8.9.4", "home_url": "https:\/\/www.demenageur.com", "is_admin": false, "is_user_logged_in": false }, "admin_url": "https:\/\/www.demenageur.com\/wp-admin\/", "ajaxurl": "https:\/\/www.demenageur.com\/wp-admin\/admin-ajax.php", "nonce": "f0fec47f6c", "acf_version": "6.2.2", "wp_version": "6.3.1", "browser": "firefox", "locale": "fr_FR", "rtl": false, "screen": "acf_form", "post_id": "new_post", "validation": true, "editor": "classic", "is_pro": true };
-    </script> -->
-
-    <!-- <script type="rocketlazyloadscript">
-acf.doAction( 'prepare' );
-</script> -->
 
     <script>window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
             var lazyLoadInstance = e.detail.instance; if (window.MutationObserver) {
@@ -3527,16 +3408,6 @@ acf.doAction( 'prepare' );
             }
         }, !1)</script>
     <script data-no-minify="1" async src="./js/lazyload.min.js"></script>
-
-
-    <!-- <style>
-
-
-
-
-
-
-    </style> -->
 
 </body>
 
