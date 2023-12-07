@@ -20,11 +20,11 @@ app.get('/essai', (req, res) => {
 })
 
 app.post('/php/admin-ajax.php', (req, res) => {
-  res.sendFile(path.join(initial_path, "./php/admin-ajax.php"));
+  res.sendFile(path.join(initial_path, "./php/calcule-volume.php"));
 })
 
 app.get('/php/admin-ajax.php', (req, res) => {
-  res.sendFile(path.join(initial_path, "./php/admin-ajax.php"));
+  res.sendFile(path.join(initial_path, "./php/calcule-volume.php"));
 })
 
 
