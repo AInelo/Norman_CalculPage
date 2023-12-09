@@ -19,22 +19,22 @@ app.get('/essai', (req, res) => {
   res.sendFile(path.join(initial_path, "essai.html"));
 })
 
-app.post('/php/admin-ajax.php', (req, res) => {
+app.post('/php/calcule-volume.php', (req, res) => {
   res.sendFile(path.join(initial_path, "./php/calcule-volume.php"));
 })
 
-app.get('/php/admin-ajax.php', (req, res) => {
+app.get('/php/calcule-volume.php', (req, res) => {
   res.sendFile(path.join(initial_path, "./php/calcule-volume.php"));
 })
 
 
 const port = 3004;
-const ipAddress = "192.168.1.106";
+const ipAddress = "192.168.1.107";
 
 // const Port = port.process.env.PORT || 3000;
 // const Port = process.env.PORT || 3000;
 
 
-app.listen(port, () => {
+app.listen(port,ipAddress, () => {
     console.log(`Le serveur écoute sur ${ipAddress}:${port}.....`);
 });

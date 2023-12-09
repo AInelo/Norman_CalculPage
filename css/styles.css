@@ -459,38 +459,214 @@
   margin-top:30px;
   margin-bottom:15px;
 }
-.acfv .add_furniture .title{margin-bottom:75px;text-align:center;font-weight:700}
-.acfv .types-container{background:#314c88;box-shadow:3px 4px 8px 1px rgba(0,0,0,.23)}
-.acfv .types-nav{display:flex;margin:0;border:none}
-@media (max-width:767.98px){.acfv .types-nav{display:block}}
-.acfv .types-nav .nav-item{padding:0;margin:0;list-style:none}
-.acfv .types-nav .nav-item:before{display:none}
-.acfv .types-nav .nav-item a{display:block;height:100%;padding:10px 20px;color:#FFF;font-weight:300;font-size:14px;line-height:normal;letter-spacing:.28px;border:none;border-right:1px solid #6579a6;border-radius:0;text-decoration:none}
-@media (max-width:767.98px){.acfv .types-nav .nav-item a{border:none}}
-.acfv .types-nav .nav-item a:first-line{font-size:18px;font-weight:500;letter-spacing:.36px}
-.acfv .types-nav .nav-item a.active,.acfv .types-nav .nav-item a:hover{background:#e4552c;border:none;border-right:1px solid #e4552c;text-decoration:none}
-@media (min-width:768px){.acfv .types-nav .nav-item a:focus{background:#e4552c;border:none;border-right:1px solid #e4552c;text-decoration:none}}
-.acfv .types-nav .nav-item.item-mobile{box-shadow:0 5px 8px 1px rgba(0,0,0,.23);background-color:#314c88}
-.acfv .types-nav .nav-item.item-mobile a{position:relative;padding-right:50px}
-.acfv .types-nav .nav-item.item-mobile a:after{position:absolute;top:11px;right:25px;display:inline-block;content:'-'}
-.acfv .types-nav .nav-item.item-mobile a.collapsed:after{content:'+'}
-.acfv .types-nav .nav-item a.nav-add-furniture{position:relative;padding-left:47px}
-.acfv .types-nav .nav-item a.nav-add-furniture .fas{position:absolute;display:block;content:"\f055";font-family:'Font Awesome 5 Pro';font-size:23px;color:#11daa3;top:18px;left:14px}
-.acfv .types-nav .nav-item a.nav-add-furniture:hover .fas,.acfv .types-nav .nav-item a.nav-add-furniture:focus .fas{color:#FFF}
-.acfv .result-container{text-align:center}
-@media (min-width:1140px){.acfv .result-container{max-width:980px}}
-.acfv .result-container .volumes{margin:0 auto;padding:15px 0;max-width:600px}
-.acfv .result-container .volumes .txt{display:inline-block;color:#324b88;font-size:18px;font-weight:300;letter-spacing:.18px;line-height:26px;text-align:left}
-.acfv .result-container .volumes .txt:first-line{font-size:40px;font-weight:800;letter-spacing:.4px}
-.acfv .result-container .volumes .value{display:inline-block;font-size:86px;color:#e4552c;font-weight:700;line-height:1}
-@media (min-width:960px){.acfv .result-container .volumes .value{margin-top:-32px}}
-.acfv .result-container .volumes .value .m3{font-size:42px;vertical-align:baseline}
-.acfv .result-container .materiaux{border-top:2px solid #dbe0f2}
-.acfv .result-container .materiaux .number{display:inline-block;margin-right:10px;color:#e4552c;font-size:50px;font-weight:700}
-.acfv .result-container .materiaux .txt{display:inline-block;margin-right:30px;color:#999;font-size:14px;font-weight:700}
-.acfv .result-container .materiaux .and{display:inline-block;margin:0 20px;color:#ccc;font-size:52px;font-weight:700}
-.acfv .result-container .materiaux .cartons,.acfv .result-container .materiaux .scotch{position:relative;padding-left:65px;display:inline-block;color:#000;font-size:16px;font-weight:700;line-height:normal}
-.acfv .result-container .materiaux .cartons:before,.acfv .result-container .materiaux .scotch:before{position:absolute;top:14px;left:0;display:inline-block;content:'';height:35px;width:39px;background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_cartons_full.png) no-repeat}
-.acfv .result-container .materiaux .scotch:before{top:23px;height:26px;width:39px;background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_scotch_full.png) no-repeat}
-.acfv .result-container .edit{text-align:right}.acfv .result-container .edit a{display:inline-block;color:#666;font-size:12px;font-weight:400;line-height:24px}
-.acfv .result-container .edit a:before{content:'';display:inline-block;height:13px;width:13px;padding-right:15px;vertical-align:-1px;background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_edit.png) no-repeat}
+.acfv .add_furniture .title{
+  margin-bottom:75px;
+  text-align:center;
+  font-weight:700;
+}
+.acfv .types-container{
+  background:#314c88;
+  box-shadow:3px 4px 8px 1px rgba(0,0,0,.23);
+}
+.acfv .types-nav{
+  display:flex;
+  margin:0;border:none;
+}
+@media (max-width:767.98px){
+  .acfv .types-nav{
+    display:block;
+    }
+  }
+.acfv .types-nav .nav-item{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+.acfv .types-nav .nav-item:before{
+  display:none;
+}
+.acfv .types-nav .nav-item a{
+  display:block;
+  height:100%;
+  padding:10px 20px;
+  color:#FFF;
+  font-weight:300;
+  font-size:14px;
+  line-height:normal;
+  letter-spacing:.28px;
+  border:none;
+  border-right:1px solid #6579a6;
+  border-radius:0;
+  text-decoration:none;
+}
+@media (max-width:767.98px){
+  .acfv .types-nav .nav-item a{
+    border:none;
+    }
+  }
+.acfv .types-nav .nav-item a:first-line{
+  font-size:18px;
+  font-weight:500;
+  letter-spacing:.36px;
+}
+.acfv .types-nav .nav-item a.active,.acfv .types-nav .nav-item a:hover{
+  background:#e4552c;
+  border:none;
+  border-right:1px solid #e4552c;
+  text-decoration:none;
+}
+@media (min-width:768px){
+  .acfv .types-nav .nav-item a:focus{
+    background:#e4552c;
+    border:none;
+    border-right:1px solid #e4552c;
+    text-decoration:none;
+    }
+  }
+.acfv .types-nav .nav-item.item-mobile{
+  box-shadow:0 5px 8px 1px rgba(0,0,0,.23);
+  background-color:#314c88;
+}
+.acfv .types-nav .nav-item.item-mobile a{
+  position:relative;
+  padding-right:50px;
+}
+.acfv .types-nav .nav-item.item-mobile a:after{
+  position:absolute;
+  top:11px;
+  right:25px;
+  display:inline-block;
+  content:'-';
+}
+.acfv .types-nav .nav-item.item-mobile a.collapsed:after{
+  content:'+';
+}
+.acfv .types-nav .nav-item a.nav-add-furniture{
+  position:relative;
+  padding-left:47px;
+}
+.acfv .types-nav .nav-item a.nav-add-furniture .fas{
+  position:absolute;
+  display:block;
+  content:"\f055";
+  font-family:'Font Awesome 5 Pro';
+  font-size:23px;
+  color:#11daa3;
+  top:18px;
+  left:14px;
+}
+.acfv .types-nav .nav-item a.nav-add-furniture:hover .fas,.acfv .types-nav .nav-item a.nav-add-furniture:focus .fas{
+  color:#FFF;
+}
+.acfv .result-container{
+  text-align:center;
+}
+@media (min-width:1140px){
+  .acfv .result-container{
+    max-width:980px;
+    }
+  }
+.acfv .result-container .volumes{
+  margin:0 auto;
+  padding:15px 0;
+  max-width:600px;
+}
+.acfv .result-container .volumes .txt{
+  display:inline-block;
+  color:#324b88;
+  font-size:18px;
+  font-weight:300;
+  letter-spacing:.18px;
+  line-height:26px;
+  text-align:left;
+}
+.acfv .result-container .volumes .txt:first-line{
+  font-size:40px;
+  font-weight:800;
+  letter-spacing:.4px;
+}
+.acfv .result-container .volumes .value{
+  display:inline-block;
+  font-size:86px;
+  color:#e4552c;
+  font-weight:700;
+  line-height:1;
+}
+@media (min-width:960px){
+  .acfv .result-container .volumes .value{
+    margin-top:-32px;
+    }
+  }
+.acfv .result-container .volumes .value .m3{
+  font-size:42px;
+  vertical-align:baseline;
+}
+.acfv .result-container .materiaux{
+  border-top:2px;
+   solid #dbe0f2;
+ }
+.acfv .result-container .materiaux .number{
+  display:inline-block;
+  margin-right:10px;
+  color:#e4552c;
+  font-size:50px;
+  font-weight:700;
+}
+.acfv .result-container .materiaux .txt{
+  display:inline-block;
+  margin-right:30px;
+  color:#999;
+  font-size:14px;
+  font-weight:700;
+}
+.acfv .result-container .materiaux .and{
+  display:inline-block;
+  margin:0 20px;
+  color:#ccc;
+  font-size:52px;
+  font-weight:700;
+}
+.acfv .result-container .materiaux .cartons,.acfv .result-container .materiaux .scotch{
+  position:relative;
+  padding-left:65px;
+  display:inline-block;
+  color:#000;
+  font-size:16px;
+  font-weight:700;
+  line-height:normal;
+}
+.acfv .result-container .materiaux .cartons:before,.acfv .result-container .materiaux .scotch:before{
+  position:absolute;
+  top:14px;
+  left:0;
+  display:inline-block;
+  content:'';
+  height:35px;
+  width:39px;
+  background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_cartons_full.png) no-repeat;
+}
+.acfv .result-container .materiaux .scotch:before{
+  top:23px;
+  height:26px;
+  width:39px;
+  background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_scotch_full.png) no-repeat;
+}
+.acfv .result-container .edit{
+  text-align:right;
+}
+.acfv .result-container .edit a{
+  display:inline-block;
+  color:#666;
+  font-size:12px;
+  font-weight:400;
+  line-height:24px;
+}
+.acfv .result-container .edit a:before{
+  content:'';
+  display:inline-block;
+  height:13px;
+  width:13px;
+  padding-right:15px;
+  vertical-align:-1px;
+  background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_edit.png) no-repeat;
+}
