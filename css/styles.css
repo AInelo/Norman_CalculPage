@@ -1,7 +1,7 @@
 .acfv{
   position:relative;
   background:#FFF;
-  z-index:9999
+  z-index:9999;
 }
 @media (min-width:1240px){
   .acfv .container{
@@ -47,7 +47,7 @@
     -webkit-box-flex:0;
     -ms-flex:0 0 20%;
     flex:0 0 20%;
-    max-width:20%
+    max-width:20%;
     }
   }
 @media (min-width:1140px){
@@ -55,7 +55,7 @@
     -webkit-box-flex:0;
     -ms-flex:0 0 20%;
     flex:0 0 20%;
-    max-width:20%
+    max-width:20%;
     }
   }
 .acfv .disp_block{
@@ -64,70 +64,70 @@
 @media (max-width:767.98px){
   .acfv .col_left{
     padding-left:0;
-    padding-right:0
+    padding-right:0;
     }
   }
 .acfv .page-id-2763242 .entry-content{
-  margin-bottom:0
+  margin-bottom:0;
 }
 .acfv .entry-header{
   padding:20px 0;
-  text-align:center
+  text-align:center;
 }
 @media (max-width:767.98px){
   .acfv .entry-header{
     padding-left:15px!important;
-    padding-right:15px!important
+    padding-right:15px!important;
     }
   }
 .acfv .entry-header h1{
   padding-bottom:0;
   color:#314c88;
-  font-weight:800
+  font-weight:800;
 }
 .acfv form{
-  background:#eff4fe
+  background:#eff4fe;
 }
 .acfv .furnitures{
-  padding-top:10px
+  padding-top:10px;
 }
 @media (max-width:767.98px){
   .acfv .furnitures{
-    padding-top:15px
+    padding-top:15px;
     }
   }
 .acfv .col_furniture{
-  margin-bottom:20px
+  margin-bottom:20px;
 }
 @media (max-width:767.98px){
   .acfv .col_furniture{
-    margin-bottom:15px
+    margin-bottom:15px;
     }
   }
 .acfv .col_furniture .furniture:hover,.acfv .col_furniture .furniture:focus{
-  background-color:#FFF
+  background-color:#FFF;
 }
 .acfv .col_furniture.furniture_on .furniture{
   background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/furniture_on.png) no-repeat top left;
-  background-color:#FFF
+  background-color:#FFF;
 }
 .acfv .col_furniture.furniture_on .furniture .container_illustration{
-  opacity:1
+  opacity:1;
 }
 .acfv .col_furniture.furniture_on .furniture .illustration svg{
-  fill:#e4552c
+  fill:#e4552c;
 }
 .acfv .furniture{
   display:flex;
   height:100%;
   padding:20px;
   text-align:center;
-  background:#fafcff
+  background:#fafcff;
 }
 @media (max-width:767.98px){
   .acfv .furniture{
     flex-wrap:wrap;
-    padding:0 20px 0 20px
+    padding:0 20px 0 20px;
     }
   }
 @media (min-width:768px){
@@ -150,24 +150,24 @@
     flex-wrap:wrap;
     flex:0 0 30%;
     max-width:30%;
-    align-items:center
+    align-items:center;
     }
   }
 @media (min-width:768px){
   .acfv .furniture .container_illustration{
-    margin-bottom:10px
+    margin-bottom:10px;
     }
   }
 .acfv .furniture .illustration{
   display:block;
-  width:100%
+  width:100%;
 }
 .acfv .furniture .illustration svg{
   display:block;
   margin:auto;
   height:100%;
   max-width:100%;
-  fill:#999
+  fill:#999;
 }
 @media (max-width:767.98px){
   .acfv .furniture .infos{
@@ -182,14 +182,14 @@
 @media (max-width:767.98px){
   .acfv .furniture .infos .sub_content{
     flex:0 0 50%;
-    max-width:50%
+    max-width:50%;
     }
   }
 @media (max-width:767.98px){
   .acfv .furniture .infos .number_qty{
     flex:0 0 50%;
     max-width:50%;
-    align-items:center
+    align-items:center;
     }
   }
 .acfv .furniture .name{
@@ -198,7 +198,7 @@
   font-weight:500;
   font-size:12px;
   line-height:16px;
-  letter-spacing:.3px
+  letter-spacing:.3px;
 }
 .acfv .furniture .size{
   display:block;
@@ -210,7 +210,7 @@
   letter-spacing:.3px;
 }
 .acfv .furniture:hover .illustration svg,.acfv .furniture:focus .illustration svg{
-  fill:#11daa3
+  fill:#11daa3;
 }
 .acfv .number_qty{display:flex;
   flex-wrap:wrap;
@@ -221,7 +221,7 @@
 }
 .acfv .number_qty .minus,.acfv .number_qty .plus,.acfv .number_qty input{
   padding:0;
-  font-size:17px
+  font-size:17px;
 }
 .acfv .number_qty .minus,.acfv .number_qty .plus{
   display:inline-block;
@@ -257,11 +257,11 @@
 }
 .acfv #results{
   background:#FFF;
-  line-height:normal
+  line-height:normal;
 }
 @media (min-width:768px){
   .acfv #results{
-    margin:32px 0
+    margin:32px 0;
     }
   }
 .acfv #results.fixed_bottom{
@@ -288,18 +288,18 @@
   padding:20px 0;
 }
 .acfv #results.fixed_bottom .result-m3 span.value{
-  font-size:47px
+  font-size:47px;
 }
 .acfv #results.fixed_bottom .result-m3 span.m3{
   font-size:28px!important;
 }
 .acfv #results.fixed_bottom .result-action{
   text-align:center;
-  background:#11daa3
+  background:#11daa3;
 }
 .acfv #results.fixed_bottom .result-action input{
   padding:0;
-  box-shadow:0 0 0 0
+  box-shadow:0 0 0 0;
 }
 .acfv #results hr{
   border-color:#f4f3f3
@@ -313,10 +313,10 @@
   display:block;
   font-weight:700;
   font-size:86px;
-  text-align:center
+  text-align:center;
 }
 .acfv #results .result-m3 span.value .m3{
-  font-size:48px
+  font-size:48px;
 }
 .acfv #results .result-inventaire{
   display:block;
@@ -339,32 +339,32 @@
   height:14px;
   width:10px;
   padding-right:15px;
-  vertical-align:-1px;background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_fl.png) no-repeat
+  vertical-align:-1px;background:url(../../../../../../../../mu-plugins/acfvc-volume-calculator/assets/images/ico_fl.png) no-repeat;
 }
 
 .acfv #results .view_all:hover,.acfv #results .view_all:focus,.acfv #results .view_all_reset:hover,.acfv #results .view_all_reset:focus{
-  color:#11daa3
+  color:#11daa3;
 }
 .acfv #results .txt-inventaire,.acfv #results .listing span{
   display:block;
   color:#333;
   font-family:Raleway;
   font-size:12px;
-  font-weight:400
+  font-weight:400;
 }
 .acfv #results .listing{
   display:inline-block;
-  margin:16px 0
+  margin:16px 0;
 }
 .acfv #results .listing span+span{
-  margin-top:11px
+  margin-top:11px;
 }
 .acfv #results .listing span{
-  text-align:left
+  text-align:left;
 }
 .acfv #results .listing span.cartons,.acfv #results .listing span.scotch{
   position:relative;
-  padding-left:40px
+  padding-left:40px;
 }
 .acfv #results .listing span.cartons:before,.acfv #results .listing span.scotch:before{
   position:absolute;
@@ -408,20 +408,57 @@
 }
 .acfv #results .result-bottom .remove_form:hover,.acfv #results .result-bottom .remove_form:focus{
   cursor:pointer;
-  text-decoration:none;  
+  text-decoration:none;
 }
-.acfv .add_furniture{padding:45px;margin-bottom:32px;background:#FFF}.acfv .add_furniture .title{color:#2f4f97;font-size:20px}
-.acfv .add_furniture .row,.acfv .add_furniture .acf-field{max-width:550px;margin:0 auto}
-.acfv .add_furniture .row{margin-bottom:30px}
-.acfv .add_furniture .add-action{text-align:center}
-.acfv .add_furniture .form-group .acf-input{max-width:100%}
-.acfv .add_furniture .acf-field>.acf-label label{margin-bottom:18px;color:#e4552c;font-size:14px;letter-spacing:-.14px;font-weight:600;text-transform:uppercase}
-.acfv .add_furniture .acf-field>.acf-label.dimensions{padding-left:15px}
-.acfv .add_furniture .acf-field .acf-input-wrap:after{display:none!important}
-.acfv .add_furniture .acf-field .acf-input-append{padding:0}
-.acfv .add_furniture .acf-field .number_qty .furniture_qty{padding:0!important}
-.acfv .add_furniture .acf-field.acf-field-furnitur-qty .acf-input{border:none}
-.acfv .add_furniture .acf-field.acf-field-furnitur-qty{margin-top:30px;margin-bottom:15px}
+.acfv .add_furniture{
+  padding:45px;
+  margin-bottom:32px;
+  background:#FFF;
+}
+.acfv .add_furniture .title{
+  color:#2f4f97;
+  font-size:20px;
+}
+.acfv .add_furniture .row,.acfv .add_furniture .acf-field{
+  max-width:550px;
+  margin:0 auto;
+}
+.acfv .add_furniture .row{
+  margin-bottom:30px;
+}
+.acfv .add_furniture .add-action{
+  text-align:center;
+}
+.acfv .add_furniture .form-group .acf-input{
+  max-width:100%;
+}
+.acfv .add_furniture .acf-field>.acf-label label{
+  margin-bottom:18px;
+  color:#e4552c;
+  font-size:14px;
+  letter-spacing:-.14px;
+  font-weight:600;
+  text-transform:uppercase;
+}
+.acfv .add_furniture .acf-field>.acf-label.dimensions{
+  padding-left:15px;
+}
+.acfv .add_furniture .acf-field .acf-input-wrap:after{
+  display:none!important;
+}
+.acfv .add_furniture .acf-field .acf-input-append{
+  padding:0;
+}
+.acfv .add_furniture .acf-field .number_qty .furniture_qty{
+  padding:0!important;
+}
+.acfv .add_furniture .acf-field.acf-field-furnitur-qty .acf-input{
+  border:none;
+}
+.acfv .add_furniture .acf-field.acf-field-furnitur-qty{
+  margin-top:30px;
+  margin-bottom:15px;
+}
 .acfv .add_furniture .title{margin-bottom:75px;text-align:center;font-weight:700}
 .acfv .types-container{background:#314c88;box-shadow:3px 4px 8px 1px rgba(0,0,0,.23)}
 .acfv .types-nav{display:flex;margin:0;border:none}
