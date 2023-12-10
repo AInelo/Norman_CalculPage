@@ -35,20 +35,22 @@
     <!-- Exemple d'inclusion d'Alpine.js -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script> -->
     <!-- POUR LE CALENDRIER  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/l10n/fr.js"></script> <!-- Pour la localisation en français -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/l10n/fr.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script type="text/javascript">
-      flatpickr("#datePicker", {
-        enableTime: true,
-           dateFormat: "Y-m-d H:i",
-      });
-      // const myInput = document.querySelector("#datePicker");
-      // const fp = flatpickr(myInput, {});  // flatpickr
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+
+
+
+
+
+<!-- Les configs tailwindcss  -->
 <script>
     tailwind.config = {
       theme: {
@@ -62,7 +64,7 @@
       }
     }
   </script>
-
+<!-- Les configs tailwindcss  -->
 </head>
 
 <body class="">
@@ -290,12 +292,10 @@
 
 
 
-
-
 <!-- LIEU DE DEPART ET D'ARRIVE  -->
 <section class="locationChoice">
-  <input type="text" id="datePicker" class="flatpickr flatpickr-input active" placeholder="Sélectionnez une date">
-
+  <input type="text" id="datePicker" type="text" class="flatpickr flatpickr-input active" placeholder="Sélectionnez une date">
+<input id="dateSelect" class="flatpickr flatpickr-input active" type="text" placeholder="Choisir la date.." data-id="minDateToday" readonly="readonly">
 </section>
 <!-- LIEU DE DEPART ET D'ARRIVE  -->
 
@@ -3682,6 +3682,24 @@
       </script>
 
     <script data-no-minify="1" async src="./js/lazyload.min.js"></script>
+
+    <script type="text/javascript">
+      flatpickr("#datePicker", {
+        enableTime: true,
+           dateFormat: "Y-m-d H:i",
+      });
+
+      flatpickr("#dateSelect", {
+        altInput: true,
+        altFormat: "F j, Y",
+        dateFormat: "Y-m-d",
+        minDate: "today"
+      });
+
+      // const myInput = document.querySelector("#datePicker");
+      // const fp = flatpickr(myInput, {});  // flatpickr
+    </script>
+
 
 </body>
 
