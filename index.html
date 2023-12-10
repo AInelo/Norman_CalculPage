@@ -34,6 +34,21 @@
      <script src="https://cdn.tailwindcss.com"></script>
     <!-- Exemple d'inclusion d'Alpine.js -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script> -->
+    <!-- POUR LE CALENDRIER  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/l10n/fr.js"></script> <!-- Pour la localisation en français -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script type="text/javascript">
+      flatpickr("#datePicker", {
+        enableTime: true,
+           dateFormat: "Y-m-d H:i",
+      });
+      // const myInput = document.querySelector("#datePicker");
+      // const fp = flatpickr(myInput, {});  // flatpickr
+    </script>
+
 <script>
     tailwind.config = {
       theme: {
@@ -92,13 +107,13 @@
   <!-- EN TETE D'EVOLUTION  -->
 
 <!-- CHOIX DU TYPES DE DEMENAGEMENT  -->
-<section class="" id="demenagementChoice">
+<section class="" id="demenagementChoice" style="display:none;" >
     <main class="">
       <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
             <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Mode de déménagment</h2>
-                <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Défillez et choisissez le mode de déménagement qui correspond à vos besoins</p>
+                <p class="font-light text-gray-800 lg:mb-16 sm:text-xl">Défillez et choisissez le mode de déménagement qui correspond à vos besoins</p>
             </div>
             <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
                 <div class="items-center bg-gray-50 rounded-lg shadow">
@@ -110,7 +125,7 @@
                             <a href="#">Livraison d'un seul article</a>
                         </h3>
 
-                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Devis instantanés pour un
+                        <p class="mt-3 mb-4 font-light text-gray-800 ">Devis instantanés pour un
                           ou plusieurs articles avec livraison le jour même !
                           Réservez dès maintenant pour une expérience sans tracas !</p>
                         <!-- <ul class="flex space-x-4 sm:mt-0">
@@ -155,7 +170,7 @@
                             <a href="#">Déménagement maison</a>
                         </h3>
                         <!-- <span class="text-gray-500 dark:text-gray-400">CTO</span> -->
-                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Obtenez des devis instantanés pour
+                        <p class="mt-3 mb-4 font-light text-gray-800 ">Obtenez des devis instantanés pour
                           l’ensemble de votre déménagement et profitez de la commodité d’une
                           livraison le jour même ! Sécurisez votre réservation dès maintenant
                           pour une expérience de déménagement fluide et sans tracas !</p>
@@ -230,7 +245,7 @@
                             <a href="#">Déménagement de bureau</a>
                         </h3>
                         <!-- <span class="text-gray-500 dark:text-gray-400">Marketing & Sale</span> -->
-                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Nous pouvons déplacer votre bureau à tout moment.
+                        <p class="mt-3 mb-4 font-light text-gray-800">Nous pouvons déplacer votre bureau à tout moment.
                           Reserve maintenant! 7 jours par semaine.</p>
                         <!-- <ul class="flex space-x-4 sm:mt-0">
                             <li>
@@ -279,6 +294,7 @@
 
 <!-- LIEU DE DEPART ET D'ARRIVE  -->
 <section class="locationChoice">
+  <input type="text" id="datePicker" class="flatpickr flatpickr-input active" placeholder="Sélectionnez une date">
 
 </section>
 <!-- LIEU DE DEPART ET D'ARRIVE  -->

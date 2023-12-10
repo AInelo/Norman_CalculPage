@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/essai', (req, res) => {
+  res.sendFile(path.join(initial_path, "essai1.html"));
+})
+
+app.get('/essaii', (req, res) => {
   res.sendFile(path.join(initial_path, "essai.html"));
 })
 
