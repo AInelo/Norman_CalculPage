@@ -8,7 +8,7 @@ flatpickr("#datePicker", {
 
 flatpickr("#dateSelect", {
   altInput: true,
-  altFormat: "F j, Y",
+  altFormat: "j F, Y",
   dateFormat: "Y-m-d",
   minDate: "today"
 });
