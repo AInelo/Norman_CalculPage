@@ -16,17 +16,19 @@
         ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});
 
 
+        const BtntypeDemenagement = document.querySelector('#typeDemenagement');
+        const BtnlieuHeureDemenagement = document.querySelector('#lieuHeureDemenagement');
+        const BtnfournitureDemenagement = document.querySelector('#fournitureDemenagement');
 
 
+// Pour l'affichage de la choix de mode de déménagment
 document.addEventListener("DOMContentLoaded", function() {
           // Obtenez une référence à l'élément de lien "contact-link"
-          const historiqueLink = document.getElementById('dis2022');
+          const BtntypeDemenagement = document.querySelector('#typeDemenagement');
           // Obtenez une référence à l'élément de formulaire de contact
           const sitedezan = document.querySelector('.sitedezan')
 
-          const choix = document.querySelector('#typeDemenagement')
-          const arch2021 = document.querySelector('#lieuHeureDemenagement')
-          const arch2022 = document.querySelector('#fournitureDemenagement')
+
 
           // Ajoutez un gestionnaire d'événements pour le clic sur le lien "contact-link"
           historiqueLink.addEventListener("click", function(event) {
@@ -41,8 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
               // arch2023.style.display = "none";
 
               // footer.style.display = "block";
-
-
 
           });
         });
