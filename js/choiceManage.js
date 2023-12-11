@@ -16,33 +16,71 @@
         ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});
 
 
-        const BtntypeDemenagement = document.querySelector('#typeDemenagement');
-        const BtnlieuHeureDemenagement = document.querySelector('#lieuHeureDemenagement');
-        const BtnfournitureDemenagement = document.querySelector('#fournitureDemenagement');
+// POUR SOUVEGARDE DES CHOIX DU CLIENT 
+
+
 
 
 // Pour l'affichage de la choix de mode de déménagment
 document.addEventListener("DOMContentLoaded", function() {
-          // Obtenez une référence à l'élément de lien "contact-link"
+          // BUTTON A CLICKER
           const BtntypeDemenagement = document.querySelector('#typeDemenagement');
-          // Obtenez une référence à l'élément de formulaire de contact
-          const sitedezan = document.querySelector('.sitedezan')
-
-
-
-          // Ajoutez un gestionnaire d'événements pour le clic sur le lien "contact-link"
-          historiqueLink.addEventListener("click", function(event) {
+          // VOLET A AFFICHER OU CACHER
+          const demenagementChoice = document.getElementById('demenagementChoice');
+          const locationChoice = document.getElementById('locationChoice');
+          const calculateur = document.getElementById('primary')
+          // Ajoutez un gestionnaire d'événements pour le clic sur LE CLICK
+          BtntypeDemenagement.addEventListener("click", function(event) {
             // Empêche le comportement par défaut du lien
            event.preventDefault();
             // Affiche le formulaire de contact
-              // sitedezan.style.display = "block";
+            demenagementChoice.style.display = 'block';
 
-              // choix.style.display = "block";
-              // arch2021.style.display = "none";
-              // arch2022.style.display = "block";
-              // arch2023.style.display = "none";
+            locationChoice.style.display = 'none';
 
-              // footer.style.display = "block";
+            calculateur.style.display = 'none';
 
           });
         });
+// POUR L'AFFICHAGE DU VOLET DE LIEU ET ARRIVE LOCATION
+document.addEventListener("DOMContentLoaded", function(){
+  const BtnlieuHeureDemenagement = document.querySelector('#lieuHeureDemenagement');
+  // VOLET A AFFICHER OU CACHER
+  const demenagementChoice = document.getElementById('demenagementChoice');
+  const locationChoice = document.getElementById('locationChoice');
+  const calculateur = document.getElementById('primary')
+  // Ajoutez un gestionnaire d'événements pour le clic sur LE CLICK
+  BtnlieuHeureDemenagement.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    demenagementChoice.style.display = 'none';
+
+    locationChoice.style.display = 'block';
+
+    calculateur.style.display = 'none';
+
+  })
+
+})
+
+
+// POUR L'AFFICHAGE DU VOLET DU CALCULATEUR
+document.addEventListener('DOMContentLoaded', function(){
+  const BtnfournitureDemenagement = document.querySelector('#fournitureDemenagement');
+  // VOLET A AFFICHER OU CACHER
+  const demenagementChoice = document.getElementById('demenagementChoice');
+  const locationChoice = document.getElementById('locationChoice');
+  const calculateur = document.getElementById('primary')
+  // Ajoutez un gestionnaire d'événements pour le clic sur LE CLICK
+  BtnfournitureDemenagement.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    demenagementChoice.style.display = 'none';
+
+    locationChoice.style.display = 'none';
+
+    calculateur.style.display = 'block';
+
+  })
+
+})

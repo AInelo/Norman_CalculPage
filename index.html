@@ -40,7 +40,7 @@
    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script> -->
 
    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> -->
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places"></script>
+   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=places"></script> -->
 
 
 
@@ -64,16 +64,21 @@
 
 <body class="">
 
+  <!-- <div id="primary" class="content-area"  >
+          <main id="main" class="site-main" role="main">
 
-    <!-- EN TETE D'EVOLUTION  -->
-    <section class="acfv" id="stageChoice">
+              <article id="article_2763242" class="post-2763242 page type-page status-publish hentry">
+                  <div class="flex flex_type_passif f_a">
+                      <div class="entry-content"> -->
+<!-- EN TETE D'EVOLUTION  -->
+<div class="acfv" id="stageChoice">
 
         <!-- .entry-header -->
             <div class="types-container">
                 <div class="container">
                     <ul class="nav nav-tabs types-nav" id="" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link" id="typeDemenagement" data-toggle="tab" href="#c-52776"
+                            <a class="nav-link active" id="typeDemenagement" data-toggle="tab" href="#c-52776"
                                 role="tab" aria-controls="c-52776" aria-selected="true">
                                 1- Types de déménagement <br />
                                  </a>
@@ -99,11 +104,19 @@
                     </ul>
                 </div>
             </div>
-        </section>
-    <!-- EN TETE D'EVOLUTION  -->
+        </div>
+<!-- EN TETE D'EVOLUTION  -->
+<!-- </div>
+</div>
+
+</article>
+
+</main>  .site-main
+</div> -->
+
 
 <!-- CHOIX DU TYPES DE DEMENAGEMENT  -->
-<section class="" id="demenagementChoice" style="display:none;" >
+<section class="" id="demenagementChoice">
     <main class="">
       <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
@@ -114,7 +127,7 @@
             <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
                 <div class="items-center bg-gray-50 rounded-lg shadow">
                     <a href="#">
-                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Avatar">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/Unique.jpg" alt="Bonnie Avatar">
                     </a>
                     <div class="p-5">
                         <h3 class="text-xl font-bold tracking-tight text-gray-900">
@@ -135,7 +148,7 @@
                 </div>
                 <div class="items-center bg-gray-50 rounded-lg shadow">
                     <a href="#">
-                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Avatar">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/House.jpg" alt="Jese Avatar">
                     </a>
                     <div class="p-5">
                         <h3 class="text-xl font-bold tracking-tight text-gray-900">
@@ -156,7 +169,7 @@
 
                 <div class="items-center bg-gray-50 rounded-lg shadow">
                     <a href="#">
-                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png" alt="Sofia Avatar">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="./img/Bureau.jpg" alt="Sofia Avatar">
                     </a>
                     <div class="p-5">
                         <h3 class="text-xl font-bold tracking-tight text-gray-900">
@@ -179,16 +192,13 @@
       </section>
 
     </main>
-    <button type="button" name="button">
 
-    </button>
 </section>
 <!-- CHOIX DU TYPES DE DEMENAGEMENT  -->
 
 
-
 <!-- LIEU DE DEPART ET D'ARRIVE  -->
-<section class="locationChoice grid grid-cols-1 gap-10">
+<section id="locationChoice" class="locationChoice grid grid-cols-1 gap-10" style="display:none;" >
     <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
       <h3 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Lieu et date de déménagement</h3>
       <p class="font-light text-gray-800 lg:mb-16 sm:text-xl">Défillez et choisissez la date et l'heure du déménagement qui correspond à vos besoins</p>
@@ -219,7 +229,7 @@
     <div id="map" style="height: 100%;" ></div>
 
     <div class="w-full wow fadeInUp p-6" data-wow-delay="0.3s">
-        <iframe class="position-relative rounded w-100 h-150"
+        <iframe class="position-relative rounded w-100 h-100"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.561465237715!2d2.344244573919077!3d6.4503023935411035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a9ee062e0f73%3A0x9b7563c6638bdf81!2sCocotomey!5e0!3m2!1sfr!2sbj!4v1694117770217!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
@@ -232,20 +242,15 @@
 <!-- LIEU DE DEPART ET D'ARRIVE  -->
 
 
-
-
-
-
-    <!-- DEBUT DU CALULATEUR  -->
-
-    <div id="primary" class="content-area" style="display:none !important;" >
+<!-- DEBUT DU CALULATEUR  -->
+<!-- <div id="primary" class="content-area"  >
         <main id="main" class="site-main" role="main">
 
             <article id="article_2763242" class="post-2763242 page type-page status-publish hentry">
                 <div class="flex flex_type_passif f_a">
-                    <div class="entry-content">
+                    <div class="entry-content"> -->
 
-                        <div class="acfv">
+                        <div class="acfv" id="primary" style="display:none;">
                             <header class="entry-header">
                                 <h1>Calculer le volume de votre déménagement</h1>
                             </header>
@@ -3571,17 +3576,25 @@
                             </form>
                         </div>
 
-                        <div class="clearfix"></div>
-                    </div>
+                        <!-- <div class="clearfix"></div> -->
+                    <!-- </div>
                 </div>
-
 
             </article>
 
-        </main><!-- .site-main -->
-    </div><!-- .content-area -->
+        </main>
 
-    <!-- FIN DU CALCULATEUR -->
+</div> -->
+<!-- .site-main -->
+<!-- .content-area -->
+<!-- FIN DU CALCULATEUR -->
+
+
+
+
+
+
+
 
     <link data-minify="1" rel='stylesheet' id='acfvc-styles-css' href='./css/styles.css' media='all' />
     <script src='./js/bootstrap.min.js' id='bootstrap-js' defer></script>
