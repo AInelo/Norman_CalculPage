@@ -25,6 +25,7 @@ jQuery(document).ready(function() {
     var idx = 100;
     jQuery('.add-action .btn').click(function() {
         var furniture = jQuery('<div class="col_furniture furniture_on col-12 col-md-6 col-xl-2dot4 removable">' + '<div class="furniture removable">' + '<div class="container_illustration"><span class="illustration"><img src="https://www.demenageur.com/wp-content/mu-plugins/acfvc-volume-calculator/assets/images/objet-ajout.png" alt=""></span></div>' + '<div class="infos">' + '<span class="sub_content">' + '<span class="name"></span>' + '</span>' + '<div class="number_qty">' + '<span class="minus"><span>-</span></span>' + '<input type="number" class="furniture_qty" name="add_furniture[' + idx + '][qty]" value="" required="required" />' + '<span class="plus"><span>+</span></span> ' + '</div>' + '<input type="hidden" class="furniture_name" name="add_furniture[' + idx + '][name]" value="" />' + '<input type="hidden" class="furniture_largeur" name="add_furniture[' + idx + '][largeur]" value="" />' + '<input type="hidden" class="furniture_longueur" name="add_furniture[' + idx + '][longueur]" value="" />' + '<input type="hidden" class="furniture_hauteur" name="add_furniture[' + idx + '][hauteur]" value="" />' + '</div>' + '</div>' + '</div>' + '	</div>');
+
         furniture.find('.name').text(jQuery('.add_furniture .add_furniture_name').val());
         for (let name of ['name', 'largeur', 'longueur', 'hauteur', 'qty']) {
             var val = jQuery('.add_furniture .add_furniture_' + name).val();
