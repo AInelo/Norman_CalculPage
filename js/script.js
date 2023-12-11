@@ -18,6 +18,9 @@ jQuery(document).ready(function(){
       jQuery('input[value="min"]').click(function(){
         var currentvalue=parseInt(jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val());
         if(!isNaN(currentvalue)&&currentvalue>0){
-          jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val(currentvalue-1)}});
-          jQuery('input[value="add"]').click(function(){var currentvalue=parseInt(jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val());jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val(currentvalue+1)})});jQuery(document).ready(function($){if(typeof acf==='undefined')
+          jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val(currentvalue-1)
+        }
+      });
+          jQuery('input[value="add"]').click(function(){
+            var currentvalue=parseInt(jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val());jQuery(this).parents('.acf-field-radio').parent().find('input[type="number"]').val(currentvalue+1)})});jQuery(document).ready(function($){if(typeof acf==='undefined')
 return;acf.add_action('load',function($el){jQuery(".acf-input-date input.form-control").attr("placeholder","jj/mm/aaaa")});$('.acf-google-map input.search, .acf-date-picker input.input').addClass('form-control');acf.addAction('validation_begin',function($form){$form.find('.acf-error-message').remove()});acf.addAction('invalid_field',function(field){field.$el.find('.acf-notice.-error').addClass('alert alert-danger').insertAfter(field.$el.find('.acf-input'))});acf.addAction('invalid_field',function(field){field.$el.find('.acf-notice.-error').remove()});$('.acf-google-map input.search, .acf-date-picker input.input').addClass('form-control');acf.addAction('validation_begin',function($form){$form.find('.acf-error-message').remove()});acf.addAction('invalid_field',function(field){field.$el.find('.acf-notice.-error').addClass('alert alert-danger').insertAfter(field.$el.find('.acf-input'))});acf.unload.disable()})
