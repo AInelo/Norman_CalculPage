@@ -12,9 +12,9 @@
         media='all' />
     <link data-minify="1" rel='stylesheet' id='acf-input-css' href='./css/theme/bootstrap/acf-input1700044861.css'
         media='all' />
-    <!-- un js qui permet d'afficher les éléments  -->
+    <!-- un js qui permet d'afficher les éléments  PARCE QUE C'EST JQUERY MÊME -->
     <script src='./js/jquery.min.js' id='jquery-core-js'></script>
-    <!-- un js qui permet d'afficher les éléments  -->
+    <!-- un js qui permet d'afficher les éléments PARCE QUE C'EST JQUERY MÊME -->
     <script src='./js/core.min.js' id='jquery-ui-core-js' defer></script>
     <script src='./js/mouse.min.js' id='jquery-ui-mouse-js' defer></script>
     <script src='./js/acf.min.js' id='acf-js'></script>
@@ -3598,18 +3598,24 @@
 
     <link data-minify="1" rel='stylesheet' id='acfvc-styles-css' href='./css/styles.css' media='all' />
     <script src='./js/bootstrap.min.js' id='bootstrap-js' defer></script>
-    <!-- <script id='script-js-extra'>
-        var ajaxurl = "https:\/\/www.demenageur.com\/wp-admin\/admin-ajax.php";
-    </script> -->
-
     <script id='script-js-extra'>
-       var ajaxurl = "./php/calcule-volume.php";
-   </script>
+        var ajaxurl = "https:\/\/www.demenageur.com\/wp-admin\/admin-ajax.php";
+    </script>
 
-   
-    <script data-minify="1" src='./js/script.js' id='script-js' defer></script>
+    <!-- <script id='script-js-extra'>
+       var ajaxurl = "./php/calcule-volume.php";
+   </script> -->
+
+
+    <!-- <script data-minify="1" src='./js/script.js' id='script-js' defer></script> -->
+
+    <!-- Sans lui les fournitures ne s'affiche même pas  -->
     <script data-minify="1" src='./js/acfvc-global.js' id='acfvc-global-js'></script>
+    <!-- Sans lui les fournitures ne s'affiche même pas  -->
+
+    <!-- SANS LUI LES ELEMENTS NE SE CALCULE PAS  -->
     <script data-minify="1" src='./js/acfvc-ajax.js' id='acfvc-ajax-js'></script>
+    <!-- SANS LUI LES ELEMENTS NE SE CALCULE PAS  -->
 
     <script>
       window.lazyLoadOptions = [{ elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, callback_loaded: function (element) { if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") { if (element.classList.contains("lazyloaded")) { if (typeof window.jQuery != "undefined") { if (jQuery.fn.fitVids) { jQuery(element).parent().fitVids() } } } } } }, { elements_selector: ".rocket-lazyload", data_src: "lazy-src", data_srcset: "lazy-srcset", data_sizes: "lazy-sizes", class_loading: "lazyloading", class_loaded: "lazyloaded", threshold: 300, }]; window.addEventListener('LazyLoad::Initialized', function (e) {
