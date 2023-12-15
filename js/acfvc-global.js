@@ -59,6 +59,7 @@ jQuery(document).ready(function() {
         jQuery('.view_all').show();
         jQuery('.view_all_reset').hide()
     });
+    
     jQuery(".remove_form").click(function() {
         jQuery("#volume-calculator")[0].reset();
         jQuery('#results .result-m3 span.value').empty().html('0 <span class="m3">m<sup>3</sup></span>');
