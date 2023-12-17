@@ -37,9 +37,6 @@ if (isset($_POST['action'])) {
   //  return $volumeResult;
 // }
 
-
-
-
 // Fonction pour le calcul de volume
 function performVolumeCalculation($furnitures) {
     // Convertissez la chaîne de requête en un tableau associatif
@@ -84,9 +81,6 @@ function performVolumeCalculation($furnitures) {
 function generateListing($furnitures) {
     // Implémentez votre logique de génération de liste d'inventaire ici en utilisant les données fournies
     // ...
-
-
-
 
 
     // Exemple de résultat (à remplacer par votre logique)
