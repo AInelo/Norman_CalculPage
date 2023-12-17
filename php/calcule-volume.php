@@ -85,6 +85,10 @@ function generateListing($furnitures) {
     // Implémentez votre logique de génération de liste d'inventaire ici en utilisant les données fournies
     // ...
 
+
+
+
+
     // Exemple de résultat (à remplacer par votre logique)
     $listingResult = "Liste d'inventaire : Table, Chaise, Lit";
 
