@@ -79,6 +79,9 @@ function performVolumeCalculation($furnitures) {
 }
 
 
+
+
+
 // Fonction pour la génération de la liste d'inventaire
 function generateListing($furnitures) {
     // Implémentez votre logique de génération de liste d'inventaire ici en utilisant les données fournies
