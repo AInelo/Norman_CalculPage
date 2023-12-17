@@ -18,8 +18,6 @@ function refresh_volumes() {
         jQuery('#results .result-inventaire span.listing').empty().html(response)
     })
 }
-
-
 jQuery(document).ready(function() {
     jQuery('#volume-calculator').on('change', 'input', function() {
         if (!jQuery(this).is(':input[class*=add_furniture]')) {
