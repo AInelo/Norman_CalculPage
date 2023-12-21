@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendulum Simulation</title>
+  <script src="https://threejs.org/build/three.js"></script>
+
+  <style>
+    body { margin: 0; }
+  </style>
+</head>
+<body>
+  <script>
+    // Import Three.js
+    import * as THREE from 'https://threejs.org/build/three.module.js';
+
+    // Initialisation de la scène
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Création du pendule
+    const rodLength = 5;
+    const ballRadius = 0.5;
+    
+    const rodGeometry = new THREE.CylinderGeometry(0.1, 0.1, rodLength, 32);
+    const rodMaterial = new THREE.MeshBasicMaterial({ color: 0xaaaaaa });
+    const rodMesh = new THREE.Mesh(rodGeometry, rodMaterial);
+    scene.add(rodMesh);
+
+    const ballGeometry = new THREE.SphereGeometry(ballRadius, 32, 32);
+    const ballMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    const ballMesh = new THREE.Mesh(ballGeometry, ballMaterial);
+    ballMesh.position.y = -rodLength;
+    scene.add(ballMesh);
+
+    // Ajout de la caméra
+    camera.position.z = 10;
+
+    // Animation de la pendule
+    const animate = function () {
+      requestAnimationFrame(animate);
+
+      // Mettez à jour l'angle de la pendule ici (en fonction du temps, de la gravité, etc.)
+      const angle = Math.sin(Date.now() * 0.001) * Math.PI / 4;
+
+      rodMesh.rotation.z = angle;
+      ballMesh.position.x = rodLength * Math.sin(angle);
+      ballMesh.position.y = -rodLength * Math.cos(angle);
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  </script>
+</body>
+</html>
