@@ -17,8 +17,7 @@
 // function generate_inventory_listing_function($furnitures) {
 //
 //     $quantity = $_POST['add_furniture'][0]['qty'];
-//
-//
+
 //     $inventory_listing = "Inventaire : " . $quantity . " meubles";
 //
 //     // Retourner la liste d'inventaire générée
