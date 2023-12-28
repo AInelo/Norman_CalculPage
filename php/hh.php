@@ -1,16 +1,11 @@
 
 
-// Fonction de traitement des volumes
-// function calculate_volume_function($furnitures) {
-//
-//     $quantity = $_POST['add_furniture'][0]['qty'];
-//
-//
+
 //     $volume = $quantity * 10; // Exemple simple de calcul du volume
 //
 //     // Retourner le résultat du calcul
 //     return $volume;
-// }
+// 
 ;;!;!;
 
 // Fonction de génération de la liste d'inventaire
@@ -23,8 +18,6 @@
 //     // Retourner la liste d'inventaire générée
 //     return $inventory_listing;
 // }
-
-
 
 
 // Enregistrement des actions pour les fonctions de rappel
