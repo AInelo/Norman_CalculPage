@@ -8,6 +8,9 @@ if (isset($_POST['action'])) {
     $mode = isset($_POST['mode']) ? $_POST['mode'] : '';
     $furnitures = isset($_POST['furnitures']) ? $_POST['furnitures'] : '';
 
+
+
+
     // Traitez les données selon le mode
     if ($mode == 'm3') {
         // Effectuez le calcul nécessaire et renvoyez les résultats
@@ -25,6 +28,10 @@ if (isset($_POST['action'])) {
     // La requête n'est pas une requête AJAX valide
     echo 'Invalid AJAX request';
 }
+
+
+
+
 
 // Fonction pour le calcul de volume
 function performVolumeCalculation($furnitures) {
