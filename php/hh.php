@@ -24,6 +24,9 @@
 //     return $inventory_listing;
 // }
 
+
+
+
 // Enregistrement des actions pour les fonctions de rappel
 // add_action('wp_ajax_volume_calculator', 'calculate_volume_function');
 // add_action('wp_ajax_nopriv_volume_calculator', 'calculate_volume_function');
