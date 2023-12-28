@@ -19,6 +19,8 @@ if (isset($_POST['action'])) {
         $result = generateListing($furnitures);
         echo $result;
     } else {
+
+        
         // Mode non reconnu
         echo 'Invalid mode';
     }
