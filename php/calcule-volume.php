@@ -30,9 +30,6 @@ if (isset($_POST['action'])) {
 }
 
 
-
-
-
 // Fonction pour le calcul de volume
 function performVolumeCalculation($furnitures) {
     // Convertissez la chaîne de requête en un tableau associatif
@@ -44,7 +41,6 @@ function performVolumeCalculation($furnitures) {
 
     // Initialisez la variable pour stocker le volume total
     $totalVolume = 0;
-
     // Vérifiez si les données nécessaires sont présentes
     if (isset($furnitureData['furniture'])) {
         // Parcourez chaque meuble
