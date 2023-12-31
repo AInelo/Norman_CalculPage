@@ -13,7 +13,7 @@
 //     return $volume;
 // }
 // Fonction de génération de la liste d'inventaire
-// function generate_inventory_listing_function($furnitures) {
+// function generate_inventory_listing_function($furnitures) 
 //
 //     $quantity = $_POST['add_furniture'][0]['qty'];
 
