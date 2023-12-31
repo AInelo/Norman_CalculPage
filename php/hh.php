@@ -14,7 +14,7 @@
 //     // Retourner le résultat du calcul
 //     return $volume;
 // }
-;;!;!;
+
 
 // Fonction de génération de la liste d'inventaire
 // function generate_inventory_listing_function($furnitures) {
