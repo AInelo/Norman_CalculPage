@@ -5,8 +5,6 @@
 //
 //     $quantity = $_POST['add_furniture'][0]['qty'];
 //
-//
-
 
 
 //     $volume = $quantity * 10; // Exemple simple de calcul du volume
