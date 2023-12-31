@@ -25,7 +25,6 @@
 //
 //     // Retourner la liste d'inventaire générée
 //     return $inventory_listing;
-// }
 
 
 // Enregistrement des actions pour les fonctions de rappel
